@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservación</title>
+</head>
+<body>
+  <header>
+    <h1>Reservación - Restaurante Cumbre</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="platos_fuertes.html">Platos Fuertes</a></li>
+      <li><a href="postres_bebidas.html">Postres y Bebidas</a></li>
+      <li><a href="reservacion.html">Reservaciones</a></li>
+      <li><a href="informacion_nutri.html">Información Nutricional</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <main>
+    <section>
+      <h2>Formulario de reservación</h2>
+      <p>Por favor completa la siguiente información para reservar en <strong>Restaurante Cumbre</strong>.</p>
+
+      <form action="procesar.php" method="post">
+        <fieldset>
+          <legend>Datos del cliente</legend>
+
+          <label for="nombre">Nombre completo:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="correo">Correo electrónico:</label><br>
+          <input type="email" id="correo" name="correo" required><br><br>
+
+          <label for="fecha">Fecha de reserva:</label><br>
+          <input type="date" id="fecha" name="fecha" required><br><br>
+
+          <label for="personas">Número de personas:</label><br>
+          <input type="number" id="personas" name="personas" min="1" max="15" required><br><br>
+
+          <p>Tipo de reserva:</p>
+          <input type="radio" id="normal" name="tipo_reserva" value="N" required>
+          <label for="normal">Normal</label>
+          <input type="radio" id="vip" name="tipo_reserva" value="V" required>
+          <label for="vip">VIP</label>
+          <br><br>
+          
+          <label for="pais">País:</label><br>
+          <select id="pais" name="pais" required>
+            <option value="">Seleccione...</option>
+            <option value="ec">Ecuador</option>
+            <option value="co">Colombia</option>
+            <option value="ve">Venezuela</option>
+          </select><br><br>
+          <label for="comentarios">Comentarios:</label><br>
+          <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+          <label for="acepto">Acepto los <a href="docs/terminos_condiciones.pdf" target="_blank" rel="noopener">
+          términos y condiciones</a></label> 
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <br><br>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </fieldset>
+      </form>
+    </section>
+    <article>
+      <h3>Recuerda:</h3>
+      <p><em>Recuerda reservar con al menos 24 horas de 
+        anticipación para garantizar tu mesa.</em></p>
+    </article>
+  </main>
+  <p><a href="reservacion.html">↑ Volver al inicio</a></p>
+  <footer>
+    <hr>
+    <p>
+      Gracias por su visita
+      <br>
+      &copy; 2025 - Restaurante Cumbre
+    </p>
+  </footer>
+
+</body>
+</html>
