@@ -22,7 +22,7 @@ var Plato = /** @class */ (function () {
         this.tipo = tipo;
     }
     Plato.prototype.servirse = function () {
-        console.log('Plato listo para servirse en el Restaurante Cumbre');
+        console.log("El plato ".concat(this.nombre, " (").concat(this.tipo, ") est\u00E1 listo para servirse en el Restaurante Cumbre."));
     };
     return Plato;
 }());
@@ -35,3 +35,7 @@ var Postre = /** @class */ (function (_super) {
     return Postre;
 }(Plato));
 exports.Postre = Postre;
+var platoPrincipal = new Plato("Aji de Gallina", "Fondo");
+var miPostre = new Postre("Mazamorra Morada", "Dulce");
+platoPrincipal.servirse();
+miPostre.servirse();

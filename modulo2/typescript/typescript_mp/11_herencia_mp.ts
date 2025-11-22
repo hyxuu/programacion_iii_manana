@@ -9,7 +9,11 @@ export class Plato {
         this.tipo = tipo;
     }
     servirse(): void {
-        console.log('Plato listo para servirse en el Restaurante Cumbre');
+        console.log(`El plato ${this.nombre} (${this.tipo}) está listo para servirse en el Restaurante Cumbre.`);
     }
 }
 export class Postre extends Plato {}
+const platoPrincipal = new Plato("Aji de Gallina", "Fondo");
+const miPostre = new Postre("Mazamorra Morada", "Dulce");
+platoPrincipal.servirse();
+miPostre.servirse();

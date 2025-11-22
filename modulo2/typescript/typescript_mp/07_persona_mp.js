@@ -12,3 +12,5 @@ var Persona = /** @class */ (function () {
     return Persona;
 }());
 exports.Persona = Persona;
+const empleado1 = new exports.Persona("Danna", 20);
+empleado1.saludar();
