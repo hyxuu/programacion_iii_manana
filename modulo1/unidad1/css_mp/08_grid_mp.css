@@ -1,0 +1,15 @@
+.grid {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      gap: 10px;
+      background-color: #DBCBC0;
+      padding: 30px;
+}
+.item {
+      background-color: #DBAF88;
+      padding: 20px;
+      border: 2px solid #f57c00;
+      text-align: left;
+      border: 20px solid white;
+      box-shadow: 2px 2px 12px rgba(255, 182, 182, 0.5);
+}

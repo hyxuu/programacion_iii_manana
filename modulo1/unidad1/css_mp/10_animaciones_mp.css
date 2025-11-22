@@ -1,0 +1,20 @@
+.boton {
+      background-color: #8BD909;
+      border: none;
+      color: white;
+      padding: 13px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+}   
+      .boton:hover {
+           background-color: blue;
+           color: black;
+           border: 2px solic #09D9B0;
+           transform: scale(1.1);
+           box-shadow: 0 8px 16px 0 rgba(128, 119, 119, 0.2);
+      }
