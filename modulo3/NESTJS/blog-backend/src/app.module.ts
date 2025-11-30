@@ -8,9 +8,9 @@ import { UsersModule } from './users/users.module';
 import { CategoriesModule } from './categories/categories.module';
 import { PostsModule } from './posts/posts.module';
 import { BasicsModule } from './basics/basics.module';
-import { RestauranteModule } from './mp/restaurante/restaurante.module';
-import { ProductoModule } from './mp/producto/producto.module';
-import { CategoriaModule } from './mp/categoria/categoria.module';
+import { RestauranteModule } from './RB/restaurante/restaurante.module';
+import { ProductoModule } from './RB/producto/producto.module';
+import { CategoriaModule } from './RB/categoria/categoria.module';
 
 @Module({
   imports: [

@@ -1,34 +1,34 @@
 console.log("FUNCIONES DEL RESTAURANTE CUMBRE");
-console.log("FORMA CLASICA");
+console.log("Inicio");
 function saludar(){
     console.log("Bienvenido al Restaurante Cumbre");
 }
 saludar();
 
-console.log("FORMA CON PARAMETROS Y RETORNO");
+console.log("PRECIO:");
 function calcularTotal(precio, cantidad){
     return precio * cantidad
 }
 let total = calcularTotal(8.5,3);
 console.log("El total de la orden es", total);
 
-console.log("FUNCION FLECHA");
+console.log("DESCUENTOS:");
 const descuento = (total, porcentaje)=>{
     return total - (total * porcentaje / 100)
 }
 let totalDescuento = descuento(50,10);
 console.log("El total con descuento es", totalDescuento);
 
-console.log("FUNCION RETORNO DIRECTO");
+console.log("PROPINAS:");
 const propina = total => total * 0.1;
 console.log("Propina sugerida de 50 es:", propina(50));
 
-console.log("FUNCION CON PARAMETROS POR DEFECTO");
+console.log("MENU PRINCIPAL:");
 function saludarCliente(nombre, saludo="Bienvenido a Cumbre"){
     return saludo + " " + nombre;
 }
-let saludo1 = saludarCliente("Francisco");
-let saludo2 = saludarCliente("Francisco","Buenos días");
+let saludo1 = saludarCliente("Danna");
+let saludo2 = saludarCliente("Danna","Buenos días");
 console.log(saludo1);
 console.log(saludo2);
 
