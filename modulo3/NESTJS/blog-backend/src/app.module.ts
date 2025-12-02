@@ -1,6 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
@@ -23,9 +26,15 @@ import { CategoriaModule } from './RB/categoria/categoria.module';
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
-      /*ssl: { rejectUnauthorized: false },*/
+      synchronize: true /*ssl: { rejectUnauthorized: false },*/,
     }),
+
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '..', 'public'),
+
+      serveRoot: '/',
+    }),
+
     AuthModule,
     BasicsModule,
     UsersModule,
@@ -39,4 +48,3 @@ import { CategoriaModule } from './RB/categoria/categoria.module';
   providers: [AppService],
 })
 export class AppModule {}
-  

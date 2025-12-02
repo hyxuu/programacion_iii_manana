@@ -5,7 +5,7 @@ export class CreatePostDto {
   title: string;
 
   @IsString()
-  //@IsOptional()
+  @IsOptional()
   content: string;
 
   @IsUUID()

@@ -8,7 +8,7 @@ export class User {
   @Column({ unique: true })
   username: string;
 
-  @Column({ nullable: true })
+  @Column({ unique: true })
   email: string;
 
   @Column()
@@ -16,8 +16,7 @@ export class User {
 
   @Column({ default: true })
   isActive: boolean;
-  
+
   @Column({ nullable: true })
   profile: string;
 }
-
