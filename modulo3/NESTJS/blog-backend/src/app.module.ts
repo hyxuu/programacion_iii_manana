@@ -14,6 +14,7 @@ import { BasicsModule } from './basics/basics.module';
 import { RestauranteModule } from './RB/restaurante/restaurante.module';
 import { ProductoModule } from './RB/producto/producto.module';
 import { CategoriaModule } from './RB/categoria/categoria.module';
+import { MailModule } from './mail/mail.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { CategoriaModule } from './RB/categoria/categoria.module';
     RestauranteModule,
     ProductoModule,
     CategoriaModule,
+    MailModule,
   ],
   controllers: [AppController],
   providers: [AppService],
