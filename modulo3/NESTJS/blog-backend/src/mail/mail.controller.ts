@@ -18,5 +18,9 @@ export class MailController {
     const result = await this.mailService.sendMail(dto);
     return new SuccessResponseDto('Correo enviado con Gmail', result);
   }
-
+  @Post('sendgrid')
+  async sendSendGrid(@Body() dto: SendMailDto) {
+    const result = await this.mailService.sendWithSendGrid(dto);
+    return new SuccessResponseDto('Correo enviado con SendGrid', result);
+  }
 }
