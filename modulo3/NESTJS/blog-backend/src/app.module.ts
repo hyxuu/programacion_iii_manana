@@ -15,10 +15,13 @@ import { RestauranteModule } from './RB/restaurante/restaurante.module';
 import { ProductoModule } from './RB/producto/producto.module';
 import { CategoriaModule } from './RB/categoria/categoria.module';
 import { MailModule } from './mail/mail.module';
+import { MongooseModule } from '@nestjs/mongoose';
+import { CursosModule } from './cursos/cursos.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
+    MongooseModule.forRoot(process.env.MONGO_URI || ''),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.DB_HOST,
@@ -40,6 +43,7 @@ import { MailModule } from './mail/mail.module';
     BasicsModule,
     UsersModule,
     CategoriesModule,
+    CursosModule,
     PostsModule,
     RestauranteModule,
     ProductoModule,
