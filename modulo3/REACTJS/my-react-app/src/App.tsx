@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ButtonCounter from './components/ButtonCounter';
+import ColorBox from './components/ColorBox';
+import ConditionalText from './components/ConditionalText';
+import EmojiList from './components/EmojiList';
+import  HelloWorld  from './components/HelloWorld';
+import PromedioTresNotasForm from './components/PromedioTresNotasForm';
+import ShowDate from './components/ShowDate';
+import SimpleForm from './components/SimpleForm';
+import SumaForm from './components/SumaForm';
+import TextInput from './components/TextInput';
+import ToggleMessage from './components/ToggleMessage';
+import WelcomeUser from './components/WelcomeUser';
+import Greeting from './props/Greeting';
+import ParentButtonOne from './props/ParentButtonOne';
+import ParentIncrementButton from './props/ParentIncrementButton';
+import ParentInputNotifier from './props/ParentInputNotifier';
+import ParentLoginForm from './props/ParentLoginForm';
+import ParentUserList from './props/ParentUserList';
+import UserCard from './props/UserCard';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const userData = { name: "Carlos", age: 30,
+    apellido: "Gonzalez",
+    direccion: "Calle Falsa 123",
+    telefono: "555-1234",
+   };
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <>
+      <HelloWorld />
+      <WelcomeUser />
+      <ButtonCounter />
+      <TextInput />
+      <ToggleMessage />
+      <ShowDate />
+      <ColorBox />
+      <ConditionalText />
+      <EmojiList />
+      <SimpleForm />
+      <SumaForm />
+      <Greeting name="Francisco" />
+      <Greeting name="Ana" />
+      <PromedioTresNotasForm />
+      
+      <UserCard user={userData} />
+      <ParentButtonOne />
+      <ParentIncrementButton />
+      <ParentInputNotifier />
+      <ParentUserList />
+      <ParentLoginForm/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
