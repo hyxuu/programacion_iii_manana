@@ -17,6 +17,14 @@ import ParentInputNotifier from './props/ParentInputNotifier';
 import ParentLoginForm from './props/ParentLoginForm';
 import ParentUserList from './props/ParentUserList';
 import UserCard from './props/UserCard';
+import AccessWithLimit from './useState/AccessWithLimit';
+import CheckboxSummary from './useState/CheckboxSummary';
+import DocumentTitleChanger from './useState/DocumentTitleChanger';
+import HoverFont from './useState/HoverFont';
+import LanguageSwitcher from './useState/LanguageSwitcher';
+import LoginWithLimit from './useState/LoginWithLimit';
+import MultiSwitch from './useState/MultiSwitch';
+import PostLikes from './useState/PostLikes';
 
 function App() {
   const userData = { name: "Carlos", age: 30,
@@ -47,6 +55,14 @@ function App() {
       <ParentInputNotifier />
       <ParentUserList />
       <ParentLoginForm/>
+      <HoverFont />
+      <AccessWithLimit />
+      <LoginWithLimit />
+      <DocumentTitleChanger />
+      <PostLikes />
+      <CheckboxSummary />
+      <LanguageSwitcher />
+      <MultiSwitch />
     </>
   );
 }
