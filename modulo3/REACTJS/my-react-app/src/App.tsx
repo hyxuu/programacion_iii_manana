@@ -39,6 +39,21 @@ import { LanguageContext } from "./useContext/LanguageContext";
 import LanguageToggle from "./useContext/LanguageToggle";
 import LoginStatus from "./useContext/LoginStatus";
 import { LoginContext } from "./useContext/LoginContext";
+import FocoAutomatico from "./useRef/FocoAutomatico";
+import CirculoColorido from "./useRef/CirculoColorido";
+import CuadradoColorido from "./useRef/CuadradoColorido";
+import ScrollDemo from "./useRef/ScrollDemo";
+import ReproductorSonido from "./useRef/ReproductorSonido";
+import MoverCaja from "./useRef/MoverCaja";
+import FiltroLista from "./useMemo/FiltroLista";
+import TablaOrdenada from "./useMemo/TablaOrdenada";
+import ContadorLetras from "./useMemo/ContadorLetras";
+import Contador from "./useCallBack/Contador";
+import ReRender from "./useCallBack/ReRender";
+import ListaProps from "./useCallBack/ListaProps";
+import ContadorReducer from "./useReducer/ContadorReducer";
+import FormularioReducer from "./useCallBack/FormularioReducer";
+import ListaReducer from "./useReducer/ListaReducer";
 
 
     /*<>
@@ -98,6 +113,21 @@ function App() {
       <LoginContext.Provider value={{ isLoggedIn, toggleLogin }}>
         <LoginStatus />
       </LoginContext.Provider>
+      <FocoAutomatico/>
+      <CirculoColorido/>
+      <CuadradoColorido/>
+      <ScrollDemo/>
+      <ReproductorSonido/>
+      <MoverCaja/>
+      <FiltroLista/>
+      <TablaOrdenada/>
+      <ContadorLetras/>
+      <Contador/>
+      <ReRender/>
+      <ListaProps items={[]}/>
+      <ContadorReducer/>
+      <FormularioReducer/>
+      <ListaReducer/>
     </>
   );
 }
