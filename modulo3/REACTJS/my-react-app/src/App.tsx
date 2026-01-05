@@ -54,7 +54,37 @@ import ListaProps from "./useCallBack/ListaProps";
 import ContadorReducer from "./useReducer/ContadorReducer";
 import FormularioReducer from "./useCallBack/FormularioReducer";
 import ListaReducer from "./useReducer/ListaReducer";
-
+import ContadorEjemplo from "./ejercicios_prueba/useState/contadorejemplo";
+import SaludoEfecto from "./ejercicios_prueba/useState/SaludoEfecto";
+import EspejoFunction from "./ejercicios_prueba/useState/EspejoFunction";
+import SelectorPuntuacion from "./ejercicios_prueba/useState/SelectorPuntuacion";
+import EmojiList from "./components/components_mp/EmojiList_mp";
+import EmojiList_mp from "./components/components_mp/EmojiList_mp";
+import HelloWorld_mp from "./components/components_mp/HelloWorld_mp";
+import MostrarEmoji from "./ejercicios_prueba/useState/MostrarEmoji";
+import EjemploContador from "./ejercicios_prueba/useState/EjemploContador";
+import NumCaracteres from "./ejercicios_prueba/useState/NumCaracteres";
+import SecurityPass from "./ejercicios_prueba/useState/SecurityPass";
+import Semaforo from "./ejercicios_prueba/useState/Semaforo";
+import FormularioEjemplo from "./ejercicios_prueba/useState/FormularioEjemplo";
+import ListaTareas from "./ejercicios_prueba/useState/ListaTareas";
+import TempMensaje from "./ejercicios_prueba/useEffect/TempMensaje";
+import ContadorInteligente from "./ejercicios_prueba/useState/ContadorInteligente";
+import MensajeFugaz from "./ejercicios_prueba/useEffect/MensajeFugaz";
+import ListaInvitados from "./ejercicios_prueba/useState/ListaInvitados";
+import Validador from "./ejercicios_prueba/useState/Validador";
+import Buscador from "./ejercicios_prueba/useState_useReF/Buscador";
+import ContadorLim from "./ejercicios_prueba/useState/ContadorLimitado";
+import AreaTriangulo from "./useState/AreaTriangulo";
+import HorasTrabajadas from "./useState/HorasTrabajadas";
+import UseIdHook from "./useId/useIdHook";
+import CampoTexto from "./useId/CampoTexto";
+import LoginCampos from "./useId/LoginCampos";
+import SeccionFormulario from "./useId/SeccionFormulario";
+import { BuscadorUseTransition } from "./useTransition/BuscadorTransition";
+import MayorNum from "./useId/MayorNum";
+import { TabsUseTransition } from "./useTransition/tabsUseTransition";
+import { GaleriaDiferida } from "./useTransition/galeriaDiferida";
 
     /*<>
       <HelloWorld/>
@@ -128,6 +158,36 @@ function App() {
       <ContadorReducer/>
       <FormularioReducer/>
       <ListaReducer/>
+      <ContadorEjemplo/>
+      <SaludoEfecto/>
+      <EspejoFunction/>
+      <SelectorPuntuacion/>
+      <EmojiList_mp/>
+      <HelloWorld_mp/>
+      <MostrarEmoji/>
+      <EjemploContador/>
+      <NumCaracteres/>
+      <SecurityPass/>
+      <Semaforo/>
+      <FormularioEjemplo/>
+      <ListaTareas/>
+      <TempMensaje/>
+      <ContadorInteligente/>
+      <MensajeFugaz/>
+      <ListaInvitados/>
+      <Validador/>
+      <Buscador/>
+      <ContadorLim/>
+      <AreaTriangulo/>
+      <HorasTrabajadas/>
+      <UseIdHook/>
+      <CampoTexto/>
+      <LoginCampos/>
+      <SeccionFormulario/>
+      <BuscadorUseTransition/>
+      <MayorNum/>
+      <TabsUseTransition/>
+      <GaleriaDiferida/>
     </>
   );
 }

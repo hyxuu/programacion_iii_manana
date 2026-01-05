@@ -26,7 +26,7 @@ export default function PromedioTresNotasForm() {
       <input
         type="number"
         placeholder="Numero3"
-        value={numero2}
+        value={numero3}
         onChange={(e) => setNumero3(Number(e.target.value))}
       />
       <button type="submit">Enviar</button>
