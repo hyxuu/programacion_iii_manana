@@ -85,6 +85,10 @@ import { BuscadorUseTransition } from "./useTransition/BuscadorTransition";
 import MayorNum from "./useId/MayorNum";
 import { TabsUseTransition } from "./useTransition/tabsUseTransition";
 import { GaleriaDiferida } from "./useTransition/galeriaDiferida";
+import BusquedaDiferidaDeferred from "./useDeferredValue/BusquedaDiferidaDeferred";
+import ListaOrdenada from "./useDeferredValue/ListaOrdenada";
+import TablaDiferida from "./useDeferredValue/TablaDiferida";
+import FormDiferido from "./useDeferredValue/formDiferido";
 
     /*<>
       <HelloWorld/>
@@ -188,6 +192,10 @@ function App() {
       <MayorNum/>
       <TabsUseTransition/>
       <GaleriaDiferida/>
+      <BusquedaDiferidaDeferred/>
+      <ListaOrdenada/>
+      <TablaDiferida/>
+      <FormDiferido/>
     </>
   );
 }
