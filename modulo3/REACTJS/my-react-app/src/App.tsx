@@ -34,8 +34,8 @@ import PersistCounter from "./useEffect/PersistCounter";
 import ScrollLogger from "./useEffect/ScrollLoger";
 import UserCard from './props/UserCard';*/
 
-import { useState } from "react";
-import { LanguageContext } from "./useContext/LanguageContext";
+import { useState, useCallback } from "react";
+/*import { LanguageContext } from "./useContext/LanguageContext";
 import LanguageToggle from "./useContext/LanguageToggle";
 import LoginStatus from "./useContext/LoginStatus";
 import { LoginContext } from "./useContext/LoginContext";
@@ -88,8 +88,13 @@ import { GaleriaDiferida } from "./useTransition/galeriaDiferida";
 import BusquedaDiferidaDeferred from "./useDeferredValue/BusquedaDiferidaDeferred";
 import ListaOrdenada from "./useDeferredValue/ListaOrdenada";
 import TablaDiferida from "./useDeferredValue/TablaDiferida";
-import FormDiferido from "./useDeferredValue/formDiferido";
-
+import FormDiferido from "./useDeferredValue/formDiferido";*/
+import FormularioBasico from "./formularios/FormularioBasico";
+import AreaTriangulo from "./useState/AreaTriangulo";
+import FormularioRHF from "./formularios/FormularioRHF";
+import FormularioZod from "./formularios/FormularioZod";
+import ListaPosts from "./fetch/ListaPosts";
+import ListaUsuariosPaginado from "./formularios/ListaUsuariosPaginado";
     /*<>
       <HelloWorld/>
       <WelcomeUser/>
@@ -134,70 +139,18 @@ import FormDiferido from "./useDeferredValue/formDiferido";
     </>*/
     
 function App() {
-  const [lang, setLang] = useState('es');
-  const toggleLanguage = () => setLang(prev => (prev === 'es' ? 'en' : 'es'));
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const toggleLogin = () => setIsLoggedIn(prev => !prev);
-  return (
-    <>
-      <LanguageContext.Provider value={{ lang, toggleLanguage }}>
-        <LanguageToggle />
-      </LanguageContext.Provider>
-      
-      <LoginContext.Provider value={{ isLoggedIn, toggleLogin }}>
-        <LoginStatus />
-      </LoginContext.Provider>
-      <FocoAutomatico/>
-      <CirculoColorido/>
-      <CuadradoColorido/>
-      <ScrollDemo/>
-      <ReproductorSonido/>
-      <MoverCaja/>
-      <FiltroLista/>
-      <TablaOrdenada/>
-      <ContadorLetras/>
-      <Contador/>
-      <ReRender/>
-      <ListaProps items={[]}/>
-      <ContadorReducer/>
-      <FormularioReducer/>
-      <ListaReducer/>
-      <ContadorEjemplo/>
-      <SaludoEfecto/>
-      <EspejoFunction/>
-      <SelectorPuntuacion/>
-      <EmojiList_mp/>
-      <HelloWorld_mp/>
-      <MostrarEmoji/>
-      <EjemploContador/>
-      <NumCaracteres/>
-      <SecurityPass/>
-      <Semaforo/>
-      <FormularioEjemplo/>
-      <ListaTareas/>
-      <TempMensaje/>
-      <ContadorInteligente/>
-      <MensajeFugaz/>
-      <ListaInvitados/>
-      <Validador/>
-      <Buscador/>
-      <ContadorLim/>
-      <AreaTriangulo/>
-      <HorasTrabajadas/>
-      <UseIdHook/>
-      <CampoTexto/>
-      <LoginCampos/>
-      <SeccionFormulario/>
-      <BuscadorUseTransition/>
-      <MayorNum/>
-      <TabsUseTransition/>
-      <GaleriaDiferida/>
-      <BusquedaDiferidaDeferred/>
-      <ListaOrdenada/>
-      <TablaDiferida/>
-      <FormDiferido/>
-    </>
-  );
+
+  return(
+  
+   <>
+   <FormularioBasico/>
+   <AreaTriangulo/>
+   <FormularioRHF/>
+   <FormularioZod/>
+   <ListaPosts/>
+   <ListaUsuariosPaginado/>
+   </>
+  )
 }
 
 
