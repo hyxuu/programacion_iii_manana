@@ -1,15 +1,13 @@
-/*import { PostList } from "../pages/Posts";
-import { Categories } from "../pages/Categories";
-import { Users } from "../pages/Users";
-import { DashboardLayout } from "../layouts/DashboardLayout";
+/*import { Home } from "../pages/public/Home";
+import { PostDetail } from "../pages/public/PostDetail";
+import { PublicLayout } from "../layouts/PublicLayout";
 import type { RouteObject } from "react-router-dom";
 
-export const privateRoutes: RouteObject = {
-  path: "/dashboard",
-  element: <DashboardLayout />,
+export const publicRoutes: RouteObject = {
+  path: "/",
+  element: <PublicLayout />,
   children: [
-    { path: "posts", element: <PostList /> },
-    { path: "categories", element: <Categories /> },
-    { path: "users", element: <Users /> },
+    { index: true, element: <Home /> },
+    { path: "post/:id", element: <PostDetail /> },
   ],
-};
+};*/
