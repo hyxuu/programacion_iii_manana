@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var _11_herencia_mp_1 = require("./11_herencia_mp");
+var miPlato = new _11_herencia_mp_1.Plato('Encebollado', 'Mariscos');
+console.log(miPlato.nombre);
+console.log(miPlato.tipo);
+miPlato.servirse();
+var miPostre = new _11_herencia_mp_1.Postre('Tres leches', 'Dulce');
+console.log(miPostre.nombre);
+console.log(miPostre.tipo);
+miPostre.servirse();
